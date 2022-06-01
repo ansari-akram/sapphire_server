@@ -1,0 +1,1 @@
+web: gunicorn sapphire_chatbot.wsgi --log-file -
