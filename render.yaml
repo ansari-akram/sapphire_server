@@ -1,0 +1,9 @@
+services:
+ - type: web
+   name: Static Assets
+   region: frankfurt
+   branch: master
+   healthCheckPath: /health
+   env: python
+   buildCommand: "./build.sh"
+   startCommand: "gunicorn sapphire_chatbot.wsgi:application"
