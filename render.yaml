@@ -6,4 +6,5 @@ services:
    healthCheckPath: /health
    env: python
    buildCommand: "./build.sh"
+   staticPublishPath: ./staticfiles
    startCommand: "gunicorn sapphire_chatbot.wsgi:application"
